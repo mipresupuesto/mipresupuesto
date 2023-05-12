@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<title>Online HTML Editor</title>
+<head>
+</head>
+<body>
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./styles.css">
+	<title>Suma de valores en tabla con valores en filas separadas</title>
+
+	
+</head>
+<body>
+    <div class="container">
+        
+            <h2>INGRESOS</h2>
+            <input type="text" id="descripcion__Ingresos" placeholder="Ingrese una descripcion">
+            <input type="number" id="valor_Ingresos" placeholder="$ Ingrese un valor">
+            <button class="btn__Ingresos" onclick="agregarIngreso(); restar()">AGREGAR</button>
+        
+            
+                <table class="container__table">
+                    <thead>
+                        <tr class="container__tr__ingresos">
+                            <th>DESCRIPCION</th>
+                            <th>VALOR INGRESOS</th>
+                            <th>SUMA</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabla_Ingresos">
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td></td>
+                            <td><strong>TOTAL:</strong></td>
+                            <td id="total_Ingresos">0</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            
+        
+    
+        <h2>GASTOS</h2>
+        <input type="text" id="descripcion__Gastos" placeholder="Ingrese una descripcion">
+        <input type="number" id="valor_Gastos" placeholder="$ Ingrese un valor">
+        <button class="btn__Gastos" onclick="agregarGasto(); restar()">AGREGAR</button>
+        <table class="container__table">
+            <thead>
+                <tr class="container__tr__gastos">
+                    <th>DESCRIPCION</th>
+                    <th>VALOR GASTOS</th>
+                    <th>SUMA</th>
+                </tr>
+            </thead>
+            <tbody id="tabla_Gastos">
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td></td>
+                    <td><strong>TOTAL:</strong></td>
+                    <td id="total_Gastos">0</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <h2>SALDO</h2>
+        <table class="container__table">
+            <thead>
+                <tr class="container__tr__saldo">
+                    <th>TOTAL INGRESOS</th>
+                    <th>TOTAL GASTOS</th>
+                    <th>SALDO</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="total_Ingresos_Saldo">0</td>
+                    <td id="total_Gastos_Saldo">0</td>
+                    <td id="balance">0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+<script src="./script.js"> </script>
+</html>
+
+</body>
+</html>

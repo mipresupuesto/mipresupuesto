@@ -1,0 +1,123 @@
+
+body {
+	background-color: #f5f5f5;
+	font-family: Arial, sans-serif;
+}
+
+.container {
+	text-align: center;
+	max-width: 900px;
+	margin: 2% auto;
+	padding: 20px;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+h1, h2 {
+	text-align: center;
+	font-size: 1.5em;
+	padding: 0.5em;
+}
+
+input{
+	width: 30%;
+	height: 30px;
+	margin-left: 8px;
+}
+
+.btn__Ingresos {
+	min-width: 130px;
+	height: 40px;
+	color: #fff;
+	padding: 5px 10px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	position: relative;
+	display: inline-block;
+	outline: none;
+	overflow: hidden;
+	border-radius: 5px;
+	border: none;
+	background-color: #61dc7e
+}
+.btn__Ingresos:hover {
+	border-radius: 5px;
+	padding-right: 24px;
+	padding-left:8px;
+}
+.btn__Ingresos:hover:after {
+	opacity: 1;
+	right: 10px;
+}
+.btn__Ingresos:after {
+	content: "\00BB";
+	position: absolute;
+	opacity: 0;
+	font-size: 20px;
+	line-height: 40px;
+	top: 0;
+	right: -20px;
+	transition: 0.4s;
+}
+
+.btn__Gastos {
+	min-width: 130px;
+	height: 40px;
+	color: #fff;
+	padding: 5px 10px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	position: relative;
+	display: inline-block;
+	outline: none;
+	overflow: hidden;
+	border-radius: 5px;
+	border: none;
+	background-color: #e07950
+}
+.btn__Gastos:hover {
+	border-radius: 5px;
+	padding-right: 24px;
+	padding-left:8px;
+}
+.btn__Gastos:hover:after {
+	opacity: 1;
+	right: 10px;
+}
+.btn__Gastos:after {
+	content: "\00BB";
+	position: absolute;
+	opacity: 0;
+	font-size: 20px;
+	line-height: 40px;
+	top: 0;
+	right: -20px;
+	transition: 0.4s;
+}
+
+.container__table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 20px 0;
+}
+
+th, td {
+	padding: 10px;
+	border: 1px solid #ccc;
+}
+
+.container__tr__ingresos {
+	background-color: rgb(16, 202, 16);
+}
+
+.container__tr__gastos {
+	background-color: rgb(221, 105, 21);
+}
+
+.container__tr__saldo{
+	background-color: rgb(243, 80, 80);
+}
+
+
